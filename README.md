@@ -1,3 +1,5 @@
+[বাংলায় পড়ুন](README.bn.md)
+
 ### HoverBlurr Chrome Extension
 
 Enhance your browsing experience with the HoverBlurr Chrome extension. It dynamically blurs images on web pages and unveils them when you hover over them with your mouse.
