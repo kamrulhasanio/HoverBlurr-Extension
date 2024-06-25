@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Image Blur Toggle",
+    "version": "0.1",
+    "description": "Blur images by default and unblur on hover for 10 seconds.",
+    "permissions": ["activeTab", "declarativeContent"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["styles.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "48": "icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "icon.png"
+        }
+    }
+}
