@@ -42,10 +42,6 @@ Contributions are welcome! Here's how you can contribute to this project:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
-
-- **Kamrul Hasan** - [GitHub](https://github.com/kamrulhasanio)
-
 ## Contact
 
 Feel free to reach out to me through my [website](https://kamrulhasan.co) or [GitHub](https://github.com/kamrulhasanio) for any questions or suggestions.
