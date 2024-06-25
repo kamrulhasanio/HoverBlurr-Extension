@@ -1,47 +1,33 @@
-# HoverBlurr Chrome Extension
+### HoverBlurr Chrome Extension
 
-Enhance your browsing experience with HoverBlurr, a Chrome extension that dynamically blurs and unblurs images on hover.
+Enhance your browsing experience with the HoverBlurr Chrome extension. It dynamically blurs images on web pages and unveils them when you hover over them with your mouse.
 
-## Description
+### Description
 
-HoverBlurr applies a default blur effect to images on web pages and removes the blur effect when you hover over them. This provides a smooth transition effect, making images more engaging and interactive.
+HoverBlurr applies a default blur effect to every image as soon as a web page loads. When you hover your mouse over these images, the blur effect disappears, allowing you to view them clearly. This helps mitigate distractions from various advertisements and other elements during browsing.
 
-## Features
-
-- Applies a default blur effect to images on web pages.
-- Removes the blur effect on hover, revealing clear images.
-- Smooth transition animations for a polished user experience.
-- Works seamlessly on all web pages (<all_urls>).
-
-## Installation
+### Installation
 
 To install the HoverBlurr Chrome extension:
 
-1. Download the zip file of the extension from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest) and unzip it.
-2. Open Google Chrome.
-3. Go to `chrome://extensions/`.
-4. Enable "Developer mode" in the top right corner.
-5. Click on "Load unpacked" and select the directory that you unzipped.
+1. Download the extension ZIP file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest) and unzip it.
+2. Open Google Chrome or any Chromium-based browser.
+3. Type `chrome://extensions/` in the address bar and press Enter.
+4. Enable Developer mode from the top-right corner.
+5. Click on "Load unpacked" and select the unzipped folder to complete the installation.
 
-## Usage
+### Usage
 
-Once installed, visit any web page containing images. Hover over an image to see the blur effect disappear temporarily, revealing the image clearly.
+Once installed, you will notice all images on any loaded web page are initially blurred. Hover your mouse over an image to unblur it temporarily. Moving your mouse away will blur it again.
 
-## Contributing
+### Contribution
 
-Contributions are welcome! Here's how you can contribute to this project:
+Contributions are essential for every open-source project. If you wish to contribute, fork the repository, create a new branch, make necessary code changes, and submit a pull request.
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-name`).
-6. Create a new Pull Request.
-
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+### Advice
 
-Feel free to reach out through my [website](https://kamrulhasan.co) or [GitHub](https://github.com/kamrulhasanio) for any questions or suggestions.
+For questions or suggestions, please post on the project's [GitHub Discussions](https://github.com/kamrulhasanio/HoverBlurr-Extension/discussions) page.
