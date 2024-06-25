@@ -1,17 +1,17 @@
-# Chrome Extension: HoverBlurr
+# HoverBlurr Chrome Extension
 
-Enhance your browsing experience by dynamically blurring and unblurring images with a simple hover using the HoverBlurr Chrome extension.
+Enhance your browsing experience with HoverBlurr, a Chrome extension that dynamically blurs and unblurs images on hover.
 
 ## Description
 
-HoverBlurr is a Chrome extension that applies a blur effect to images by default and removes the blur effect when you hover over them, providing a smooth transition effect. This enhances user interaction with images on web pages, making them more engaging.
+HoverBlurr applies a default blur effect to images on web pages and removes the blur effect when you hover over them. This provides a smooth transition effect, making images more engaging and interactive.
 
 ## Features
 
 - Applies a default blur effect to images on web pages.
-- Removes the blur effect when hovering over images.
-- Smooth transition animations for blur effect changes.
-- Works on all web pages (`<all_urls>`).
+- Removes the blur effect on hover, revealing clear images.
+- Smooth transition animations for a polished user experience.
+- Works seamlessly on all web pages (<all_urls>).
 
 ## Installation
 
@@ -25,7 +25,7 @@ To install the HoverBlurr Chrome extension:
 
 ## Usage
 
-Once installed, visit any web page containing images. Hover over an image to see the blur effect disappear temporarily.
+Once installed, visit any web page containing images. Hover over an image to see the blur effect disappear temporarily, revealing the image clearly.
 
 ## Contributing
 
@@ -44,5 +44,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Feel free to reach out to me through my [website](https://kamrulhasan.co) or [GitHub](https://github.com/kamrulhasanio) for any questions or suggestions.
-
+Feel free to reach out through my [website](https://kamrulhasan.co) or [GitHub](https://github.com/kamrulhasanio) for any questions or suggestions.
