@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Image Blur Toggle",
     "version": "0.1",
-    "description": "Blur images by default and unblur on hover for 10 seconds.",
+    "description": "HoverBlurr is a Chrome extension that applies a blur effect to images by default and removes the blur effect when you hover over them, providing a smooth transition effect. This enhances user interaction with images on web pages, making them more engaging.",
     "permissions": ["activeTab", "declarativeContent"],
     "content_scripts": [
         {
