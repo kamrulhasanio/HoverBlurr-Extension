@@ -1,8 +1,5 @@
 const unblurImage = (img) => {
     img.classList.add('revealed');
-    setTimeout(() => {
-        reblurImage(img);
-    }, 10000);
 };
 
 const reblurImage = (img) => {
