@@ -17,11 +17,11 @@ HoverBlurr applies a default blur effect to images on web pages and removes the 
 
 To install the HoverBlurr Chrome extension:
 
-1. Clone or download this repository.
+1. Download the zip file of the extension from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest) and unzip it.
 2. Open Google Chrome.
 3. Go to `chrome://extensions/`.
 4. Enable "Developer mode" in the top right corner.
-5. Click on "Load unpacked" and select the directory where you cloned/downloaded this repository.
+5. Click on "Load unpacked" and select the directory that you unzipped.
 
 ## Usage
 
