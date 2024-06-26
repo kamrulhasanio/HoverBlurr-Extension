@@ -14,7 +14,7 @@ To install the HoverBlurr Chrome extension:
 
 1. Download the extension ZIP file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest) and unzip it.
 2. Open Google Chrome or any Chromium-based browser.
-3. Type `chrome://extensions/` in the address bar and press Enter.
+3. Type `chrome://extensions` in the address bar and press Enter.
 4. Enable Developer mode from the top-right corner.
 5. Click on "Load unpacked" and select the unzipped folder to complete the installation.
 
