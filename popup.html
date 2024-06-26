@@ -1,138 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrome Extension Card</title>
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/blogger-sans">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0 auto;
-            font-family: 'Blogger Sans', sans-serif;
-            width: 300px;
-        }
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/blogger-sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      width: 300px;
+      background-color: black;
+      color: white;
+      font-family: 'Blogger Sans', Arial, sans-serif;
+      text-align: center;
+      border: 2px dotted #007bff;
+      border-radius: 2%;
+    }
+    .slider {
+      width: 100%;
+    }
+    .button {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .whitelist-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      background-color: #333;
+      border-radius: 5px;
+    }
+    .whitelist-item button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    #whitelist {
+  margin: 0;
+}
 
-        .card {
-            width: 100%;
-            height: 300px;
-        }
-
-        .card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-            cursor: pointer;
-        }
-
-        .card:hover .card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            border-radius: 0px;
-        }
-
-        .card-front {
-            background-color: #ffffff;
-        }
-
-        .card-back {
-            background-color: #007bff;
-            color: #ffffff;
-            transform: rotateY(180deg);
-        }
-
-        .extension-icon img {
-            width: 80px;
-            height: 80px;
-        }
-
-        .extension-name {
-            margin: 20px 0 10px;
-            font-size: 1.5em;
-            color: #000000;
-        }
-
-        .extension-description {
-            font-size: 1em;
-            color: #000000;
-            margin-bottom: 20px;
-        }
-
-        .source-code-link {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .source-code-link:hover {
-            text-decoration: underline;
-        }
-
-        .developer-name {
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
-
-        .developer-bio {
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 10px;
-        }
-
-        .social-link {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .social-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front">
-                <div class="extension-icon">
-                    <img src="icon.png" alt="Extension Icon">
-                </div>
-                <h2 class="extension-name">HoverBlurr Extension</h2>
-                <p class="extension-description">Enhance your browsing experience by dynamically blurring and unblurring images with a simple hover.</p>
-            </div>
-            <div class="card-back">
-                <h2 class="developer-name">Kamrul Hasan</h2>
-                <p class="developer-bio">🌐 Code & Web Explorer | 📚 Learning, Creating | 🚀 Embracing the Journey to Build Dreams | ✨ Crafting Digital Realities</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/kamrulhasanio" class="social-link" target="_blank">Facebook</a>
-                    <a href="https://t.me/kamrulhasanio" class="social-link" target="_blank">Telegram</a>
-                    <a href="https://kamrulhasan.co" class="social-link" target="_blank">Website</a>
-                    <a href="https://github.com/kamrulhasanio" class="social-link" target="_blank">GitHub</a>
-                </div>                
-            </div>
-        </div>
-    </div>
+  <h1>HoverBlurr</h1>
+  <p>HoverBlurr is a Chrome extension that applies a blur effect to images by default and removes the blur effect when you hover over them, providing a smooth transition effect. This enhances user interaction with images on web pages, making them more engaging.</p>
+  <label for="blurRange">Blur Amount: <span id="blurValue">10</span>px</label>
+  <input type="range" min="0" max="100" value="10" class="slider" id="blurRange">
+  <button id="whitelistButton" class="button">Whitelist Site</button>
+  <h2>Whitelisted Sites</h2>
+  <ul id="whitelist"></ul>
+  <p><a href="https://github.com/kamrulhasanio/HoverBlurr-Extension" style="color: white;">Source Code</a></p>
+  <script src="popup.js"></script>
 </body>
 </html>

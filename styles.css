@@ -1,28 +1,8 @@
-.blur-effect {
-    filter: blur(10px);
-    transition: filter 0.3s ease;
+img, image {
+  filter: blur(10px);
+  transition: filter 0.3s;
 }
 
-.blur-effect.revealed {
-    filter: none;
-}
-
-.blur-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    text-align: center;
-}
-
-.blur-effect.revealed + .blur-overlay {
-    display: none;
+img:hover, image:hover {
+  filter: blur(0px);
 }

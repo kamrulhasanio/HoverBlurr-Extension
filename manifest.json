@@ -1,23 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "Image Blur Toggle",
-    "version": "0.2",
-    "description": "HoverBlurr is a Chrome extension that applies a blur effect to images by default and removes the blur effect when you hover over them, providing a smooth transition effect. This enhances user interaction with images on web pages, making them more engaging.",
-    "permissions": ["activeTab", "declarativeContent"],
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "css": ["styles.css"],
-            "js": ["content.js"]
-        }
-    ],
-    "icons": {
-        "48": "icon.png"
-    },
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "48": "icon.png"
-        }
+  "manifest_version": 3,
+  "name": "HoverBlurr",
+  "version": "0.8",
+  "description": "HoverBlurr is a Chrome extension that applies a blur effect to images by default and removes the blur effect when you hover over them, providing a smooth transition effect. This enhances user interaction with images on web pages, making them more engaging.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
     }
+  ]
 }
