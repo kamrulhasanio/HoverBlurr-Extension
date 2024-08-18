@@ -1,8 +1,0 @@
-img, image {
-  filter: blur(10px);
-  transition: filter 0.3s;
-}
-
-img:hover, image:hover {
-  filter: blur(0px);
-}

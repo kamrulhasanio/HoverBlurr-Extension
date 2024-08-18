@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/blogger-sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       width: 300px;
       background-color: black;
       color: white;
-      font-family: 'Blogger Sans', Arial, sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
       border: 2px dotted #007bff;
       border-radius: 2%;
@@ -22,35 +21,18 @@
       color: white;
       padding: 10px 20px;
       text-align: center;
-      text-decoration: none;
       display: inline-block;
       font-size: 14px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    .whitelist-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5px;
-      background-color: #333;
-      border-radius: 5px;
-    }
-    .whitelist-item button {
-      background: none;
-      border: none;
-      color: white;
       cursor: pointer;
     }
     #whitelist {
-  margin: 0;
-}
-
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <h1>HoverBlurr</h1>
-  <p>HoverBlurr is a Chrome extension that applies a blur effect to images by default and removes the blur effect when you hover over them, providing a smooth transition effect. This enhances user interaction with images on web pages, making them more engaging.</p>
+  <p>HoverBlurr applies a blur effect to images by default and removes it on hover.</p>
   <label for="blurRange">Blur Amount: <span id="blurValue">10</span>px</label>
   <input type="range" min="0" max="100" value="10" class="slider" id="blurRange">
   <button id="whitelistButton" class="button">Whitelist Site</button>
