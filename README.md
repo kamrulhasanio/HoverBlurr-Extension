@@ -16,15 +16,25 @@ HoverBlurr applies a default blur effect to images on web pages. When you hover 
 - **Whitelist Functionality**: Users can whitelist specific websites to exclude them from blurring.
 - **Easy to Use**: Simple interface to manage blur settings and whitelist sites.
 
+
 ## Installation
 
-To install the HoverBlurr Chrome extension:
+### For Chrome
 
-1. Download the extension ZIP file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest) and unzip it.
+1. Download the CRX file from [here](#).
 2. Open Google Chrome or any Chromium-based browser.
 3. Type `chrome://extensions` in the address bar and press Enter.
 4. Enable Developer mode from the top-right corner.
-5. Click on "Load unpacked" and select the unzipped folder.
+5. Drag and drop the downloaded CRX file onto the Extensions page.
+
+### For Firefox
+
+1. Download the XPI file from [here](#).
+2. Open Firefox.
+3. Type `about:addons` in the address bar and press Enter.
+4. Click on the gear icon and select "Install Add-on From File..."
+5. Choose the downloaded XPI file and click "Open."
+
 
 ## Usage
 
