@@ -6,7 +6,19 @@ async function getBlurValue() {
   if (result.blurValue !== undefined) {
     blurValue = result.blurValue;
   }
-  applyBlur();
+  checkWhitelistAndApplyBlur();
+}
+
+async function checkWhitelistAndApplyBlur() {
+  const result = await browser.storage.local.get('whitelist');
+  const whitelist = result.whitelist || [];
+  const hostname = window.location.hostname;
+  
+  if (whitelist.includes(hostname)) {
+    removeBlur();
+  } else {
+    applyBlur();
+  }
 }
 
 function applyBlur() {
@@ -27,40 +39,20 @@ function applyBlur() {
   document.head.appendChild(styleElement);
 }
 
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.action === "updateBlur") {
-    blurValue = request.value;
-    applyBlur();
-  } else if (request.action === "updateWhitelist") {
-    checkWhitelist((whitelisted) => {
-      if (whitelisted) {
-        removeBlur();
-      } else {
-        applyBlur();
-      }
-    });
-  }
-});
-
-async function checkWhitelist(callback) {
-  const result = await browser.storage.local.get('whitelist');
-  const whitelist = result.whitelist || [];
-  const hostname = window.location.hostname;
-  callback(whitelist.includes(hostname));
-}
-
-checkWhitelist((whitelisted) => {
-  if (whitelisted) {
-    removeBlur();
-  } else {
-    applyBlur();
-  }
-});
-
 function removeBlur() {
   if (styleElement) {
     styleElement.remove();
   }
 }
 
+browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === "updateBlur") {
+    blurValue = request.value;
+    applyBlur();
+  } else if (request.action === "updateWhitelist") {
+    checkWhitelistAndApplyBlur();
+  }
+});
+
+// Initialize the blur value and check whitelist on load
 getBlurValue();
