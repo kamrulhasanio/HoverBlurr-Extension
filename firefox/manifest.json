@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "HoverBlurr",
   "version": "1.0",
   "description": "HoverBlurr is a browser extension that applies a blur effect to images by default and removes the blur effect when you hover over them.",
@@ -9,7 +9,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "action": {
+  "browser_action": {
     "default_popup": "popup.html"
   },
   "background": {
@@ -22,9 +22,7 @@
     }
   ],
   "web_accessible_resources": [
-    {
-      "resources": ["icons/*.png"],
-      "matches": ["<all_urls>"]
-    }
+    "icons/*.png"
   ]
 }
+

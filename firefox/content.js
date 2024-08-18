@@ -27,7 +27,7 @@ function applyBlur() {
   }
   
   styleElement = document.createElement('style');
-  styleElement.innerHTML = `
+  styleElement.textContent = `
     img, image {
       filter: blur(${blurValue}px);
       transition: filter 0.3s;
@@ -56,3 +56,4 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 // Initialize the blur value and check whitelist on load
 getBlurValue();
+
