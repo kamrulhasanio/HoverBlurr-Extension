@@ -21,7 +21,7 @@ HoverBlurr applies a default blur effect to images on web pages. When you hover 
 
 ### For Chrome
 
-1. Download the CRX file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/download/v1.0/HoverBlurr.Extension.v1.0.crx).
+1. Download the CRX file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest).
 2. Open Google Chrome or any Chromium-based browser.
 3. Type `chrome://extensions` in the address bar and press Enter.
 4. Enable Developer mode from the top-right corner.
@@ -29,7 +29,7 @@ HoverBlurr applies a default blur effect to images on web pages. When you hover 
 
 ### For Firefox
 
-1. Download the XPI file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/download/v1.0/HoverBlurr.Extension.v1.0.xpi).
+1. Download the XPI file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest).
 2. Open Firefox.
 3. Type `about:addons` in the address bar and press Enter.
 4. Click on the gear icon and select "Install Add-on From File..."
