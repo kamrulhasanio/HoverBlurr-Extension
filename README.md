@@ -27,14 +27,6 @@ HoverBlurr applies a default blur effect to images on web pages. When you hover 
 4. Enable Developer mode from the top-right corner.
 5. Drag and drop the downloaded CRX file onto the Extensions page.
 
-### For Firefox
-
-1. Download the XPI file from [here](https://github.com/kamrulhasanio/HoverBlurr-Extension/releases/latest).
-2. Open Firefox.
-3. Type `about:addons` in the address bar and press Enter.
-4. Click on the gear icon and select "Install Add-on From File..."
-5. Choose the downloaded XPI file and click "Open."
-
 
 ## Usage
 
